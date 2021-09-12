@@ -1,9 +1,17 @@
-﻿using System.Collections.Generic;
-
-namespace DS1core
+﻿namespace DS1core.Models
 {
     public class Weapon : Item
     {
+        public int PhisycalDamage { get; set; }
+        public int MagicalDamage { get; set; }
+        public int FirelDamage { get; set; }
+        public int LightningDamage { get; set; }
+
+        public char StrengthBonus { get; set; }
+        public char DexterityBonus { get; set; }
+        public char IntelligenceBonus { get; set; }
+        public char FaithBonus { get; set; }
+
         public int CriticalDamage { get; set; }
         public int Bleed { get; set; }
         public int Poison { get; set; }
@@ -21,22 +29,5 @@ namespace DS1core
         public int DexterityRequirement { get; set; }
         public int IntelligenceRequirement { get; set; }
         public int FaithRequirement { get; set; }
-
-        public List<WeaponRank> Ranks { get; set; }
-
-        public class WeaponRank
-        {
-            public int Rank { get; set; }
-
-            public int PhisycalDamage { get; set; }
-            public int MagicalDamage { get; set; }
-            public int FirelDamage { get; set; }
-            public int LightningDamage { get; set; }
-
-            public char StrengthBonus { get; set; }
-            public char DexterityBonus { get; set; }
-            public char IntelligenceBonus { get; set; }
-            public char FaithBonus { get; set; }
-        }
     }
 }

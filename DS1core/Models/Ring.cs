@@ -1,4 +1,4 @@
-﻿namespace DS1core
+﻿namespace DS1core.Models
 {
     public class Ring : Entity
     {
